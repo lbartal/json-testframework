@@ -11,7 +11,7 @@ import com.google.gson.JsonSyntaxException;
 public class MenuBuilder {
 
 	String menujson;
-	String generatedJson;
+	
 
 	MenuBuilder() throws IOException {
 		byte[] encoded = Files.readAllBytes(Paths.get("src/test/data/menusample.json"));
@@ -19,11 +19,13 @@ public class MenuBuilder {
 		System.out.println(menujson);
 	}
 
-	void build() throws JsonSyntaxException{
+	String build() throws JsonSyntaxException{
 		Gson gson = new Gson() ;
 		MenuRoot menu = gson.fromJson(menujson, MenuRoot.class);
+		String generatedJson;
 		generatedJson = buildJson(menu);
 		System.out.println(generatedJson);
+		return generatedJson;
 	}
 
 	static String buildJson(Object o) throws JsonSyntaxException{
