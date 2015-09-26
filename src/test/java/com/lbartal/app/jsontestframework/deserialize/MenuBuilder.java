@@ -1,4 +1,4 @@
-package com.lbartal.app.jsontestframework;
+package com.lbartal.app.jsontestframework.deserialize;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

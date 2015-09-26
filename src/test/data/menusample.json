@@ -4,8 +4,8 @@
   "popup": {
     "menuitem": [
       {"value": "New", "onclick": "CreateNewDoc()"},
-      {"value": "Open", "onclick": "OpenDoc()"},
-      {"value": "Close", "onclick": "CloseDoc()"}
+      {"value": 1.12, "onclick": "OpenDoc()"},
+      {"value": false, "onclick": "CloseDoc()"}
     ]
   }
 }}

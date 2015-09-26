@@ -1,4 +1,4 @@
-package com.lbartal.app.jsontestframework;
+package com.lbartal.app.jsontestframework.deserialize;
 
 import java.util.ArrayList;
 
